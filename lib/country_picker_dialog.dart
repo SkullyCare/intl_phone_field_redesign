@@ -140,6 +140,8 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
                                 _filteredCountries[index].flag,
                                 style: const TextStyle(fontSize: 18),
                               ),
+                        minLeadingWidth: 1,
+                        
                         contentPadding: widget.style?.listTilePadding,
                         title: Text(
                           _filteredCountries[index].localizedName(widget.languageCode),
