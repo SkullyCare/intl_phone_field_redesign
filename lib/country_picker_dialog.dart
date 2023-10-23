@@ -126,9 +126,10 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
                 itemCount: _filteredCountries.length,
                 itemBuilder: (ctx, index) => Column(
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 10),
+                    SizedBox(
+                      height: 45,
                       child: ListTile(
+                        visualDensity: VisualDensity(vertical: -2),
                         leading: kIsWeb
                             ? Image.asset(
                                 'assets/flags/${_filteredCountries[index].code.toLowerCase()}.png',
